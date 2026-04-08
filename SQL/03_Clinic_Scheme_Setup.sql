@@ -6,19 +6,18 @@ CREATE TABLE clinic_sales (
   sale_date DATE
 );
 
+INSERT INTO clinic_sales VALUES
+(1, 'Ravi', 'Online', 500, '2021-11-10'),
+(2, 'Kumar', 'Offline', 700, '2021-11-11'),
+(3, 'Arun', 'Online', 800, '2021-12-01'),
+(4, 'John', 'Offline', 400, '2021-12-05');
+
 CREATE TABLE expenses (
   expense_id INT PRIMARY KEY,
   expense_type VARCHAR(50),
   amount INT,
   expense_date DATE
 );
-
-
-INSERT INTO clinic_sales VALUES
-(1, 'Ravi', 'Online', 500, '2021-11-10'),
-(2, 'Kumar', 'Offline', 700, '2021-11-11'),
-(3, 'Arun', 'Online', 800, '2021-12-01'),
-(4, 'John', 'Offline', 400, '2021-12-05');
 
 INSERT INTO expenses VALUES
 (1, 'Rent', 300, '2021-11-01'),
